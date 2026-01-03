@@ -42,4 +42,4 @@ In progress / Nearly complete
 
 ## Author
 Keerat Singh  
-High school student interested in Computer Science and Electrical & Computer Engineering  
+High school student interested in Computer Science and Electrical & Computer Engineering

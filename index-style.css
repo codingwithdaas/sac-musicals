@@ -65,7 +65,7 @@ display: flex;
   background-image: url(-images/home-page-quote-banner.jpg);
   background-size: cover;
   background-position: center;
-  height: 235px;
+  height: 200px;
   width: auto;
   display: flex;
   align-items: top;
@@ -73,15 +73,16 @@ display: flex;
 }
 
 .hero-text {
-  background-color: rgba(0, 0, 0, 0.3); /* semi-transparent black */
+  background-color: rgba(0, 0, 0, 0); /* semi-transparent black */
   color: white;
   padding: 10px;
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
   font-family: 'IBM Plex Serif', serif;
   margin-left: 10px;
   margin-right: 10px;
 }
+
 
 /* CONTENT SECTION TEXT*/
 .content-section {
