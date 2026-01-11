@@ -1,7 +1,7 @@
-# Sac Tabla Maker Website
+# SacMusicals Website
 
 ## Description
-This project is a custom-built website for **Sac Tabla Maker**, a local business that creates and repairs traditional Indian tablas. The website is designed to provide information about the business, showcase products and services, and make it easier for customers to get in touch.
+This project is a custom-built website for **SacMusicals**, a local business that creates and repairs traditional Indian tablas. The website is designed to provide information about the business, showcase products and services, and make it easier for customers to get in touch.
 
 In addition to web development, this project also involved managing social media content and supporting community outreach.
 
