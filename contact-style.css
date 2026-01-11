@@ -13,7 +13,7 @@ display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2px 30px;
-  background-color: #5a3e2b; /* dark wood */
+  background-color: #272726; /* dark gray */
   color: white;
 }
 
@@ -25,18 +25,16 @@ display: flex;
 }
 
 .logo img {
-  height: 80px;   /* try 30–50px */
+  height: 100px;   /* try 30–50px */
   width: auto;
-    margin-left: -20px;
+    margin-left: -25px;
+    margin-bottom: -1px;
+    margin-top: 5px;
 }
 
-.logo-text img {
-  height: 25px;
-  width: auto;
-  position: fixed;   /* freezes it in place */
-  top: 29px;         /* adjust vertical position */
-  left: 93px;       /* adjust horizontal position */
-  z-index: 999;      /* keeps it above other elements */
+.logo a:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s;
 }
     
 /* NAV LINKS */
@@ -53,11 +51,14 @@ display: flex;
   text-decoration: none;
   color: white;
   font-size: 19px;
+  display: inline-block;
 }
 
 .nav-links a:hover {
   text-decoration: underline;
-  color: #f6ecba; /* light tan */
+  color: #f5cc6b; /* yellow tan */
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 /* HERO IMAGE AND TEXT */
@@ -91,9 +92,7 @@ display: flex;
   font-style: italic;
   margin: 0;
 }
-.hero-text h1 + p {
-  margin-top: 5px;
-}
+
 
 /* CONTENT SECTION */
 .content-section {
@@ -122,6 +121,19 @@ display: flex;
   margin-bottom: -9px;
 }
 
+.content-section a {
+  display: inline-block;
+  color: #272726; /* dark gray */
+  text-decoration: underline;
+}
+
+.content-section a:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  text-decoration: underline;
+  color: #f5cc6b; /* yellow tan */
+}
+
 /* FORM STYLES */
 .form-box {
   max-width: 3000px;
@@ -136,13 +148,28 @@ display: flex;
 
 .container h2 {
   text-align: center;
+  margin-top: -37px;
   margin-bottom: 20px;
   font-family: 'IBM Plex Serif', serif;
   font-weight: bold;
 }
 
-.container p { /* SUCCESS MESSAGE */
+/* SUCCESS MESSAGE */
+.container p { 
   text-align: center;
   margin-bottom: 20px;
   font-family: 'IBM Plex Serif', serif;
+}
+
+.container a { 
+  color: #272726; /* dark gray */
+  text-decoration: underline;
+  display: inline-block;
+}
+
+.container a:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+  text-decoration: underline;
+  color: #f5cc6b; /* yellow tan */
 }

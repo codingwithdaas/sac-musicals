@@ -13,7 +13,7 @@ display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2px 30px;
-  background-color: #5a3e2b; /* dark wood */
+  background-color: #272726;  /* dark gray */
   color: white;
 }
 
@@ -25,18 +25,16 @@ display: flex;
 }
 
 .logo img {
-  height: 80px;   /* try 30–50px */
+  height: 100px;   /* try 30–50px */
   width: auto;
-    margin-left: -20px;
+    margin-left: -25px;
+    margin-bottom: -1px;
+    margin-top: 5px;
 }
 
-.logo-text img {
-  height: 25px;
-  width: auto;
-  position: fixed;   /* freezes it in place */
-  top: 29px;         /* adjust vertical position */
-  left: 93px;       /* adjust horizontal position */
-  z-index: 999;      /* keeps it above other elements */
+.logo a:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s;
 }
     
 /* NAV LINKS */
@@ -53,11 +51,14 @@ display: flex;
   text-decoration: none;
   color: white;
   font-size: 19px;
+  display: inline-block;
 }
 
 .nav-links a:hover {
   text-decoration: underline;
-  color: #f6ecba; /* light tan */
+  color: #f5cc6b; /* yellow tan */
+  transform: scale(1.1);
+  transition: 0.3s; 
 }
 
 /* HERO IMAGE AND TEXT */
@@ -94,13 +95,13 @@ display: flex;
   text-align: center;
 }
 .content-section h2 {
-  color: #5a3e2b; /* dark wood */
+  color: #272726; /* dark gray */
 }
-.content-section a { /* IN PROGRESS */
-  color: #5a3e2b; /* dark wood */
+.content-section a { 
+  color: #272726; /* dark gray */
   text-decoration: none;
 }
-.content-section a:hover { /* IN PROGRESS */
+.content-section a:hover { 
   text-decoration: underline;
 }
 
@@ -114,6 +115,7 @@ display: flex;
   font-family: 'IBM Plex Serif', serif;
 }
 
+/* PRODUCT CARD */
 .product-card img {
   width: 100%;
   max-width: 450px;
@@ -127,26 +129,30 @@ display: flex;
 .product-card img:hover { /* IMAGE HOVER EFFECT */
   transform: scale(1.05);
   transition: transform 0.3s;
-  border-color: #f6ecba; /* light tan */
+  border-color: #f5cc6b; /* yellow tan */
 }
 
 .product-card h3 {
-  color: #5a3e2b; /* dark wood */
+  color: #272726; /* dark wood */
   margin-top: 15px;
   font-size: 1.5rem;
 }
 
 .product-card p {
-  color: #555;
+  margin-top: -5px;
+  color: #272726;
   font-size: 1rem;
 }
 
 .product-card a {
-  color: #5a3e2b; /* dark wood */
+  color: #272726; /* dark wood */
   font-size: 1rem;
+  display: inline-block;
 }
 
 .product-card a:hover {
   text-decoration: underline;
-  color: #f6ecba; /* light tan */
+  color: #f5cc6b; /* light tan */
+  transform: scale(1.05);
+  transition: transform 0.3s;
 }
