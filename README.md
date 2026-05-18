@@ -38,8 +38,10 @@ This reflects my learning process and growth as a developer.
 - Expand content and visuals
 
 ## Status
-In progress / Nearly complete
+Website is live! Visit it at [www.sacmusicals.com](https://www.sacmusicals.com).
+
+More changes and fixes to come!
 
 ## Author
 Keerat Singh  
-High school student interested in Computer Science and Electrical & Computer Engineering
+High school student interested in Computer Engineering, Computer Science, and Bioinformatics
