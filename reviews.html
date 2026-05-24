@@ -1,25 +1,29 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reviews - SacMusicals</title>
-    <link rel="icon" type="image/png" href="/-assets/-images/favicon.png">
-    <link rel="stylesheet" href="reviews-style.css">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews - SacMusicals</title>
+  <link rel="icon" type="image/png" href="/-assets/-images/favicon.png">
+  <link rel="stylesheet" href="reviews-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
-    <header class="navbar">
+  <header class="navbar">
     <div class="logo">
-    <a href="index.html">
+      <a href="index.html">
         <img src="-assets/-images/sac-musicals-logo-shortened.png" 
         alt="SacMusicals logo" loading="lazy" aria-hidden="true">
-    </a>
+      </a>
     </div>
 
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Open navigation menu">
+      ☰
+    </button>
+
     <nav>
-      <ul class="nav-links">
+      <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
         <li><a href="products.html">Products</a></li>
         <li><a href="reviews.html">Reviews</a></li>
@@ -28,41 +32,43 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-</header>
-    
-<div class="hero-image">
+  </header>
+
+  <div class="hero-image">
     <div class="hero-text">
       <h1>Reviews</h1>
       <p>See what others are saying about our tabla products.</p>
     </div>
   </div>
 
-<div class="content-section">
+  <div class="content-section">
     <h2>Testimonials</h2>
     <p><a href="contact.html">Contact us</a> to share your experience with our tabla products!</p>
-    </div>
-
   </div>
 
-<div class="product-showcase">
-
-      <div class="product-item"> 
-        <video src="-assets/-videos/"
-         controls 
-         alt="" 
-         loading="lazy">
-         </video>
-        <p></p>
-      </div>
-
-      <div class="product-item">
-        <video src="-assets/-videos/" 
-        controls 
-        alt="" 
+  <div class="product-showcase">
+    <div class="product-item"> 
+      <video src="-assets/-videos/"
+        controls
         loading="lazy">
       </video>
       <p></p>
-      </div>
-  
+    </div>
+
+    <div class="product-item">
+      <video src="-assets/-videos/" 
+        controls
+        loading="lazy">
+      </video>
+      <p></p>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+      document.querySelector(".hamburger").classList.toggle("active");
+    }
+  </script>
 </body>
 </html>

@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with SacMusicals for tabla making, reheading, and repair services. Contact us today.">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Contact - SacMusicals">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://sacmusicals.com/-assets/-images/sac-musicals-logo-shortened.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:url" content="https://sacmusicals.com/contact.html">
-    <meta property="og:description" content="Get in touch with SacMusicals for tabla making, reheading, and repair services. Contact us today.">
-    
-    <link rel="icon" type="image/png" href="/-assets/-images/favicon.png">
-    <title>Contact - SacMusicals</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="contact-style.css">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with SacMusicals for tabla making, reheading, and repair services. Contact us today.">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Contact - SacMusicals">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://sacmusicals.com/-assets/-images/sac-musicals-logo-shortened.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:url" content="https://sacmusicals.com/contact.html">
+  <meta property="og:description" content="Get in touch with SacMusicals for tabla making, reheading, and repair services. Contact us today.">
+  
+  <link rel="icon" type="image/png" href="/-assets/-images/favicon.png">
+  <title>Contact - SacMusicals</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="contact-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
-    <header class="navbar">
+  <header class="navbar">
     <div class="logo">
-    <a href="index.html">
+      <a href="index.html">
         <img src="-assets/-images/sac-musicals-logo-shortened.png" 
         alt="SacMusicals logo" loading="lazy" aria-hidden="true">
-    </a>
+      </a>
     </div>
 
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Open navigation menu">
+      ☰
+    </button>
+
     <nav>
-      <ul class="nav-links">
+      <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
         <li><a href="products.html">Products</a></li>
         <li><a href="reviews.html">Reviews</a></li>
@@ -41,7 +46,7 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-</header>
+  </header>
 
   <div class="hero-image">
     <div class="hero-text">
@@ -50,56 +55,62 @@
     </div> 
   </div> 
 
-<address>
-  <div class="content-section">
-    <h2>Our Contact Information</h2>
-    <p>Feel free to reach out to us through the following methods:</p>
-    <p>Instagram <img src="-assets/-images/instagram-icon.png" alt="Instagram icon" loading="lazy">: <a href="https://www.instagram.com/sacmusicals.cali/" target="_blank">@sacmusicals.cali</a></p>
-    <p>Email <img src="-assets/-images/email-icon.png" alt="Email icon" loading="lazy">: <a href="mailto:sactablamaker@gmail.com">sactablamaker@gmail.com</a></p>
-  </div>
-</address>
+  <address>
+    <div class="content-section">
+      <h2>Our Contact Information</h2>
+      <p>Feel free to reach out to us through the following methods:</p>
+      <p>Instagram <img src="-assets/-images/instagram-icon.png" alt="Instagram icon" loading="lazy">: <a href="https://www.instagram.com/sacmusicals.cali/" target="_blank">@sacmusicals.cali</a></p>
+      <p>Email <img src="-assets/-images/email-icon.png" alt="Email icon" loading="lazy">: <a href="mailto:sactablamaker@gmail.com">sactablamaker@gmail.com</a></p>
+    </div>
+  </address>
 
-<div class="container mt-5 d-flex justify-content-center">
+  <div class="container mt-5 d-flex justify-content-center">
     <div class="form-wrapper w-100">
-  <h2 class="text-center mb-4">Contact Form</h2>
+      <h2 class="text-center mb-4">Contact Form</h2>
+
       <form class="row g-3 form-box" action="https://api.web3forms.com/submit" method="POST">
-        
-        <!-- Web3Forms Access Key -->
         <input type="hidden" name="access_key" value="a0a679f8-e4a1-4069-9c7c-93d1df16512f">
-        
-        <!-- Redirect to success page -->
         <input type="hidden" name="redirect" value="https://sacmusicals.com/success.html">
 
-        <!-- START OF FORM -->
         <div class="col-md-6">
           <label for="firstName" class="form-label">First Name <span style="color: red;">&ast;</span></label>
           <input type="text" class="form-control" placeholder="First Name" name="First Name" id="firstName" required>
         </div>
+
         <div class="col-md-6">
           <label for="lastName" class="form-label">Last Name <span style="color: red;">&ast;</span></label>
           <input type="text" class="form-control" placeholder="Last Name" name="Last Name" id="lastName" required>
         </div>
+
         <div class="col-md-8">
           <label for="emailInfo" class="form-label">Email <span style="color: red;">&ast;</span></label>
           <input type="email" class="form-control" placeholder="example@email.com" name="email" id="emailInfo" required minlength="6" maxlength="254">
         </div>
+
         <div class="col-md-4">
           <label for="phoneNumber" class="form-label">Phone Number</label>
           <input type="tel" class="form-control" placeholder="+1 (XXX) XXX-XXXX" name="Phone Number" id="phoneNumber">
         </div>
+
         <div class="col-md-12">
           <label for="comments" class="form-label">Message <span style="color: red;">&ast;</span></label>
           <textarea class="form-control" placeholder="Type your message here..." name="message" id="comments" rows="3" required></textarea>
         </div>
+
         <div class="col-md-12">
           <button type="submit" class="btn btn-primary">Submit</button>          
         </div>
-  </form>
-</div>
-</div>
+      </form>
+    </div>
+  </div>
 
-<!-- Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+      document.querySelector(".hamburger").classList.toggle("active");
+    }
+  </script>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

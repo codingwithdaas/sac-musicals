@@ -18,8 +18,19 @@
     </a>
     </div>
 
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Open navigation menu">
+    ☰
+  </button>
+
+  <script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+    document.querySelector(".hamburger").classList.toggle("active");
+  }
+  </script>
+
     <nav>
-      <ul class="nav-links">
+      <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
         <li><a href="products.html">Products</a></li>
         <li><a href="reviews.html">Reviews</a></li>

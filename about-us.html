@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - SacMusicals</title>
-    <link rel="icon" type="image/png" href="/-assets/-images/favicon.png">
-    <link rel="stylesheet" href="about-us-style.css">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - SacMusicals</title>
+  <link rel="icon" type="image/png" href="/-assets/-images/favicon.png">
+  <link rel="stylesheet" href="about-us-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
 </head>
-<body>
 
-    <header class="navbar">
+<body>
+  <header class="navbar">
     <div class="logo">
-    <a href="index.html">
+      <a href="index.html">
         <img src="-assets/-images/sac-musicals-logo-shortened.png" 
         alt="SacMusicals logo" loading="lazy" aria-hidden="true">
-    </a>
+      </a>
     </div>
 
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Open navigation menu">
+      ☰
+    </button>
+
     <nav>
-      <ul class="nav-links">
+      <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
         <li><a href="products.html">Products</a></li>
         <li><a href="reviews.html">Reviews</a></li>
@@ -28,32 +32,39 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-</header>
-    
-<div class="hero-image">
+  </header>
+
+  <div class="hero-image">
     <div class="hero-text">
       <h1>About Us</h1>
       <p>Learn more about our initiative and our mission.</p>
     </div>
   </div>
 
-<div class="content-section">
+  <div class="content-section">
     <h2>Our Story</h2>
     <p>SacMusicals is a home-based tabla-making service proudly located in Sacramento, California. The idea began when we noticed a lack of accessible tabla making and reheading services in the local community, leaving many people without reliable support. Inspired by friends who share a deep love for playing tabla—and who faced the same challenges—we took the initiative to respond to that need. What started at home in March 2025 began with offering free tablas to the local Sikh community. The overwhelmingly positive feedback and encouragement that followed gave us the confidence to turn our passion into a business. Today, we provide finished puddas and duggas, professional reheading services, custom orders for custom-scaled tablas, and minor repairs to improve sound quality. Built on love for seva (selfless service) and community, SacMusicals continues to grow with the support of over 700 followers on Instagram at <a href="https://www.instagram.com/sacmusicals.cali/" target="_blank">@sacmusicals.cali</a>.</p>
   </div>
 
-<div class="founders-section">
+  <div class="founders-section">
     <h2>Founders</h2>
 
-  <div class="founder-content">
-    <p><strong>Tanvir Singh</strong>, a 19-year-old founder based in Sacramento, is the heart behind SacMusicals. Passionate about tabla making and reheading, Tanvir brings a bright mind and a deep understanding of the craft to every instrument he works on. Rooted in Sikh values and closely connected with the local Sikh community, his work is guided by a strong commitment to service (seva) and giving back. Dedicated to quality, honesty, and customer satisfaction, Tanvir strives to provide high-quality tabla services while supporting the greater community through care, craftsmanship, and tradition.</p>
-    <img src="-assets/-images/tanvir-founder.jpeg" alt="Tanvir Singh, founder of SacMusicals" loading="lazy">
-  </div>
-  <div class="founder-content">
-    <p><strong>Keerat Singh</strong>, a 17-year-old co-founder based in Sacramento, plays an active role in shaping SacMusicals' online presence and community outreach. He manages the brand’s Instagram content and built the SacMusicals website, helping bring a local, youth-driven vision to life. Beyond digital work, Keerat occasionally assists with preparing new products and supporting repair work, gaining hands-on experience in traditional craftsmanship. Guided by the values of seva and service, he is passionate about responding to community needs and supporting people through meaningful, accessible work.</p>
-    <img src="-assets/-images/keerat-cofounder.jpeg" alt="Keerat Singh, co-founder of SacMusicals" loading="lazy">
+    <div class="founder-content">
+      <p><strong>Tanvir Singh</strong>, a 19-year-old founder based in Sacramento, is the heart behind SacMusicals. Passionate about tabla making and reheading, Tanvir brings a bright mind and a deep understanding of the craft to every instrument he works on. Rooted in Sikh values and closely connected with the local Sikh community, his work is guided by a strong commitment to service (seva) and giving back. Dedicated to quality, honesty, and customer satisfaction, Tanvir strives to provide high-quality tabla services while supporting the greater community through care, craftsmanship, and tradition.</p>
+      <img src="-assets/-images/tanvir-founder.jpeg" alt="Tanvir Singh, founder of SacMusicals" loading="lazy">
+    </div>
+
+    <div class="founder-content">
+      <p><strong>Keerat Singh</strong>, a 17-year-old co-founder based in Sacramento, plays an active role in shaping SacMusicals' online presence and community outreach. He manages the brand’s Instagram content and built the SacMusicals website, helping bring a local, youth-driven vision to life. Beyond digital work, Keerat occasionally assists with preparing new products and supporting repair work, gaining hands-on experience in traditional craftsmanship. Guided by the values of seva and service, he is passionate about responding to community needs and supporting people through meaningful, accessible work.</p>
+      <img src="-assets/-images/keerat-cofounder.jpeg" alt="Keerat Singh, co-founder of SacMusicals" loading="lazy">
     </div>
   </div>
 
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+      document.querySelector(".hamburger").classList.toggle("active");
+    }
+  </script>
 </body>
 </html>
