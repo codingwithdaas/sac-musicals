@@ -170,7 +170,6 @@ display: flex;
     z-index: 1000;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     padding: 2px 20px;
   }
 
@@ -188,7 +187,13 @@ display: flex;
     border: none;
     color: white;
     cursor: pointer;
-    margin-left: 175px;
+
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    margin-left: auto;
     transition: transform 0.3s, color 0.3s;
   }
 
@@ -198,7 +203,7 @@ display: flex;
 
   .hamburger.active {
     color: #f5cc6b; /* yellow tan */
-    transform: rotate(90deg);
+    transform: translateY(-50%) rotate(90deg);
   }
 
   /* MOBILE NAV LINKS */
