@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <head>
   <meta charset="UTF-8">
   <meta name="description" content="SacMusicals is a local business offering tabla making, reheading, and minor repairs services.">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="SacMusicals - Home">
   <meta property="og:type" content="website">
@@ -20,28 +20,38 @@
   <link rel="stylesheet" href="index-style.css">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
 </head>
-</head>
 
 <body>
-  <header class="navbar">
-    <div class="logo">
+<header class="navbar">
+  <div class="logo">
     <a href="index.html">
-        <img src="-assets/-images/sac-musicals-logo-shortened.png" 
-        alt="Sac Musicals logo" loading="lazy" aria-hidden="true">
+      <img src="-assets/-images/sac-musicals-logo-shortened.png" 
+      alt="Sac Musicals logo" loading="lazy" aria-hidden="true">
     </a>
-    </div>
+  </div>
 
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="reviews.html">Reviews</a></li>
-        <li><a href="about-us.html">About Us</a></li>
-        <li><a href="faqs.html">FAQs</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Open navigation menu">
+    ☰
+  </button>
+
+  <nav>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="faqs.html">FAQs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 </header>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+    document.querySelector(".hamburger").classList.toggle("active");
+  }
+</script>
 
 <div class="hero-image"> <!--Hero image container -->
   <div class="hero-text"> <!--Hero text container -->
