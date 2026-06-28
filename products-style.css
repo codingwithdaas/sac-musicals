@@ -188,6 +188,11 @@ display: flex;
   color: #f5cc6b; /* yellow tan */
   text-decoration: underline;
 }
+
+.hamburger {
+    display: none;
+}
+
 @media (max-width: 600px) {
 
   /* MOBILE NAVBAR */
