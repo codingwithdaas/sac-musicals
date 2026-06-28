@@ -6,11 +6,12 @@ This project is a custom-built website for **SacMusicals**, a local business tha
 In addition to web development, this project also involved managing social media content and supporting community outreach.
 
 ## Features
-- Desktop-focused website layout
 - Business and service information
 - Contact page for customer inquiries
 - Bootstrap-based contact form with responsive components
+- Mobile-responsive website layout with hamburger navigation
 - Clean and simple UI focused on usability
+- Responsive footer and mobile-friendly page sections
 
 ## Tech Stack
 - HTML
@@ -32,7 +33,7 @@ This reflects my learning process and growth as a developer.
 - Communicating with a client and adapting to real requirements
 
 ## Future Improvements
-- Implement a fully responsive mobile-friendly layout across all pages
+- Continue testing responsiveness across more screen sizes and devices
 - Improve accessibility (ARIA labels, contrast, keyboard navigation)
 - Optimize performance and load times
 - Expand content and visuals
@@ -44,4 +45,4 @@ More changes and fixes to come!
 
 ## Author
 Keerat Singh  
-High school student interested in Computer Engineering, Computer Science, and Bioinformatics
+High school student | Computer Engineering, Computer Science, and Bioinformatics

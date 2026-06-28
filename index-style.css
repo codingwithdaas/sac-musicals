@@ -61,6 +61,11 @@ display: flex;
   transition: 0.3s; 
 }
 
+/* HAMBURGER */
+.hamburger {
+  display: none;
+}
+
 /* HERO IMAGE AND TEXT */
 .hero-image {
   background-image: url(-assets/-images/home-page-quote-banner.jpg);
@@ -83,7 +88,6 @@ display: flex;
   margin-left: 10px;
   margin-right: 10px;
 }
-
 
 /* CONTENT SECTION TEXT*/
 .content-section {
@@ -155,4 +159,251 @@ display: flex;
   color: #f5cc6b; /* light tan */
   transform: scale(1.05);
   transition: transform 0.3s;
+}
+
+@media (max-width: 600px) {
+
+  /* MOBILE NAVBAR */
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    flex-direction: row;
+    align-items: center;
+    padding: 2px 20px;
+  }
+
+  /* MOBILE LOGO */
+  .logo img {
+    height: 90px;
+    margin-left: -15px;
+  }
+
+  /* MOBILE HAMBURGER */
+  .hamburger {
+    display: block;
+    font-size: 32px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    margin-left: auto;
+    transition: transform 0.3s, color 0.3s;
+  }
+
+  .hamburger:focus {
+    color: #f5cc6b; /* yellow tan */
+  }
+
+  .hamburger.active {
+    color: #f5cc6b; /* yellow tan */
+    transform: translateY(-50%) rotate(90deg);
+  }
+
+  /* MOBILE NAV LINKS */
+.navbar nav {
+  width: 100%;
+}
+
+.nav-links {
+  flex-direction: column;
+  width: calc(100% - 20px);
+  background-color: #272726;
+  text-align: center;
+  gap: 0;
+
+
+  position: absolute;
+  top: 100px;
+  left: 10px;
+
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0;
+
+  border-radius: 0 0 14px 14px;
+
+  transition: max-height 0.35s ease, opacity 0.25s ease, padding 0.35s ease;
+}
+
+.nav-links.show {
+  max-height: 420px;
+  opacity: 1;
+  padding: 10px 0;
+}
+
+.nav-links li {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.nav-links a {
+  display: block;
+  padding: 12px 20px;
+  border-bottom: 1px solid #444;
+}
+
+.nav-links li:last-child a {
+  border-bottom: none;
+}
+
+.nav-links a:hover {
+  color: #f5cc6b; /* yellow tan */
+}
+
+.nav-links a:active {
+  color: #f5cc6b; /* yellow tan */
+}
+
+  /* MOBILE HERO IMAGE AND TEXT */
+  .hero-image {
+    height: 160px;
+    align-items: center;
+  }
+
+  .hero-text {
+    font-size: 16px;
+    padding: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 22px;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+  }
+
+  /* MOBILE CONTENT SECTION */
+  .content-section {
+    font-size: 17px;
+    padding: 0 16px;
+  }
+
+  /* MOBILE PRODUCT GRID */
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 20px;
+  }
+
+  /* MOBILE PRODUCT CARD */
+  .product-card img {
+    max-width: 100%;
+  }
+  /* MOBILE FOOTER */
+.site-footer {
+  margin-top: 35px;
+  padding: 30px 20px 15px;
+  text-align: center;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+.footer-brand img {
+  width: 170px;
+  max-width: 100%;
+}
+
+.footer-brand p {
+  font-size: 13px;
+}
+
+.site-footer h3 {
+  font-size: 20px;
+}
+
+.footer-links a,
+.footer-contact a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-contact p {
+  margin-bottom: 12px;
+}
+
+.footer-bottom {
+  font-size: 13px;
+  padding-top: 12px;
+}
+}
+
+
+
+
+/*------FOOTER-----*/
+/* FOOTER */
+.site-footer {
+  background-color: #272726;
+  color: white;
+  font-family: 'IBM Plex Serif', serif;
+  margin-top: 50px;
+  padding: 35px 30px 15px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-brand img {
+  width: 180px;
+  height: auto;
+  border: 1px solid #f5cc6b;
+}
+
+.footer-brand p {
+  color: #f5cc6b;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.site-footer h3 {
+  color: #f5cc6b;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.footer-links a,
+.footer-contact a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer-contact p {
+  margin: 0 0 10px;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+  color: #f5cc6b;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  margin-top: 25px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #ddd;
 }

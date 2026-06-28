@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQs - SacMusicals</title>
-    <link rel="icon" type="image/png" href="/-assets/-images/favicon.png">
-    <link rel="stylesheet" href="faqs-style.css">
-    <script src="faqs-script.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs - SacMusicals</title>
+  <link rel="icon" type="image/png" href="/-assets/-images/favicon.png">
+  <link rel="stylesheet" href="faqs-style.css">
+  <script src="faqs-script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
 </head>
-<body>
 
-    <header class="navbar">
+<body>
+  <header class="navbar">
     <div class="logo">
-    <a href="index.html">
+      <a href="index.html">
         <img src="-assets/-images/sac-musicals-logo-shortened.png" 
         alt="Sac Musicals logo" loading="lazy" aria-hidden="true">
-    </a>
+      </a>
     </div>
 
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Open navigation menu">
+      ☰
+    </button>
+
     <nav>
-      <ul class="nav-links">
+      <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
         <li><a href="products.html">Products</a></li>
         <li><a href="reviews.html">Reviews</a></li>
@@ -30,45 +33,37 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-</header>
-    
-<div class="hero-image">
+  </header>
+
+  <div class="hero-image">
     <div class="hero-text">
       <h1>FAQs</h1>
       <p>Frequently asked questions about our services and products.</p>
     </div>
   </div>
 
-<div class="content-section">
-  <div class="question-section">
-    <h2>General Questions</h2> <!-- General Questions -->
-    <h3>What is SacMusicals?</h3>
-    <p>SacMusicals is a home-based tabla making and
+  <div class="content-section">
+    <div class="question-section">
+      <h2>General Questions</h2>
+
+      <h3>What is SacMusicals?</h3>
+      <p>SacMusicals is a home-based tabla making and
         <button data-modal-target="#modal1">reheading</button>
-    service located in Sacramento, California. It was started to meet the local community’s need for accessible, high-quality tabla craftsmanship, including reheading, repairs, and<button data-modal-target="#modal2">custom-scaled tablas.</button></p>
-    
-    <div class="modal" id="modal1"> <!-- REHEAD DEFINITION MODAL -->
-            <div class="modal-header">
-            <div class="title">reheading</div>
-             <button data-close-button class="close-button" id="close-button">&times;</button>
-            </div> <!-- modal-header -->
-            <div class="modal-body">
-              <p>the process of replacing the drumhead (the skin) of a tabla. Over time, the skin can wear out, lose its tonal quality, or get damaged. Reheading involves removing the old skin and fitting a new one, which restores the tabla's sound and playability. <a href="contact.html">Contact us to learn more!</a></p>
-            </div> <!-- modal-body -->
-            </div> <!-- modal -->
-            <div id="overlay"></div> <!-- overlay -->
+        service located in Sacramento, California. It was started to meet the local community’s need for accessible, high-quality tabla craftsmanship, including reheading, repairs, and
+        <button data-modal-target="#modal2">custom-scaled tablas</button>.
+      </p>
 
-    <div class="modal" id="modal2"> <!-- CUSTOM-SCALED TABLAS DEFINITION MODAL -->
-            <div class="modal-header">
-            <div class="title">custom-scaled tablas</div>
-             <button data-close-button class="close-button" id="close-button">&times;</button>
-            </div> <!-- modal-header -->
-            <div class="modal-body">
-              <p>tablas with specific sizes or scales based on the player’s preference and style. ex: a d# &lpar;scale&rpar; 5.5" &lpar;size&rpar; pudda. <a href="contact.html">Contact us to learn more!</a></p>
-            </div> <!-- modal-body -->
-            </div> <!-- modal -->
-            <div id="overlay"></div> <!-- overlay -->
+      <div class="modal" id="modal1">
+        <div class="modal-header">
+          <div class="title">reheading</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>The process of replacing the drumhead, or skin, of a tabla. Over time, the skin can wear out, lose its tonal quality, or get damaged. Reheading involves removing the old skin and fitting a new one, which restores the tabla's sound and playability. <a href="contact.html">Contact us to learn more!</a></p>
+        </div>
+      </div>
 
+<<<<<<< HEAD
     <h3>What services do you offer?</h3>
     <p>We provide finished <button data-modal-target="#modal3">puddas</button>
      and <button data-modal-target="#modal4">duggas</button>, reheading for puddas and duggas, custom orders for custom-scaled tablas, and minor repairs to improve sound quality.</p>
@@ -94,46 +89,138 @@
             </div> <!-- modal-body -->
             </div> <!-- modal -->
             <div id="overlay"></div> <!-- overlay -->
+=======
+      <div class="modal" id="modal2">
+        <div class="modal-header">
+          <div class="title">custom-scaled tablas</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Tablas with specific sizes or scales based on the player’s preference and style. Example: a D# scale 5.5" pudda. <a href="contact.html">Contact us to learn more!</a></p>
+        </div>
+      </div>
 
-     <h3>How can I place an order?</h3>
-    <p>You can place an order by contacting us through our <a href="contact.html">Contact</a> page. Please provide details about the product or service you are interested in, and we will get back to you with further information.</p>
-    <h3>What is the turnaround time for orders?</h3>
-    <p>Turnaround time varies depending on the condition of the tabla and current workload. We will provide an estimated timeline before starting.</p>
-  </div> <!-- END OF GENERAL QUESTIONS  -->
+      <h3>What services do you offer?</h3>
+      <p>We provide finished <button data-modal-target="#modal3">puddas</button>
+      and <button data-modal-target="#modal4">duggas</button>, reheading for puddas and duggas, custom orders for custom-scaled tablas, and minor repairs to improve sound quality.</p>
+>>>>>>> 2b96e98fab983cdd91f8980c2c30206a45271566
 
-  <div class="question-section">
-    <h2>Service Questions</h2> <!-- Service Questions -->
-    <h3>How do I know if my tabla needs reheading or repairs?</h3>
-    <p>If your tabla has a dull sound, uneven tone, or visible damage to the skin or structure, it may need reheading or repairs. Feel free to <a href="contact.html">contact us</a> for an assessment.</p>
-    <h3>Can you improve the sound of an older tabla?</h3>
-    <p>Yes. Reheading, tuning, and minor repairs can significantly improve tone, resonance, and playability.</p>
-    <h3>Do you offer custom tabla sizes or scales?</h3>
-    <p>Yes, we offer custom orders for tablas with specific sizes or scales. Please <a href="contact.html">contact us</a> with your requirements.</p>
-    <h3>Do you tune the tablas after reheading?</h3>
-    <p>Yes. Every reheaded tabla is properly tuned and tested before it is returned.</p>
-  </div> <!-- END OF SERVICE QUESTIONS  -->
+      <div class="modal" id="modal3">
+        <div class="modal-header">
+          <div class="title">pudda</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+          <img src="-assets/-images/purchasable-products.JPG" alt="Pudda" loading="lazy">
+        </div>
+      </div>
 
-  <div class="question-section">
-    <h2>Shipping Questions</h2> <!-- Shipping Questions -->
-    <h3>How do I send my tabla for reheading or repairs?</h3>
-    <p>We offer both local drop-off and shipping options. Local drop-offs are available by appointment only, and location details are shared privately after service confirmation. We also accept shipped tablas for reheading and repairs, with shipping instructions provided upon request.</p>
-    <h3>Do you ship finished products?</h3>
-    <p>Yes, we ship finished products. Please <a href="contact.html">contact us</a> for shipping details and costs.</p>
-    <h3>What are the shipping costs?</h3>
-    <p>Shipping costs vary based on the destination and size of the package. We will provide shipping cost details when you place your order.</p>
-  </div> <!-- END OF SHIPPING QUESTIONS  -->
+      <div class="modal" id="modal4">
+        <div class="modal-header">
+          <div class="title">dugga</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+          <img src="-assets/-images/copper-dugga-image.jpeg" alt="Dugga" loading="lazy">
+        </div>
+      </div>
 
-  <div class="question-section">
-    <h2>Credibility Questions</h2> <!-- Credibility Questions -->
-    <h3>Why should I choose SacMusicals?</h3>
-    <p>We are a community-driven, home-based business built from genuine need, passion for tabla, and trust earned through quality work, social media, and <a href="reviews.html">reviews</a>.</p>
-    <h3>Do you have any reviews or testimonials?</h3>
-    <p>Yes, you can find reviews and testimonials from our customers on our <a href="reviews.html">Reviews</a> page and our Instagram page at <a href="https://www.instagram.com/sacmusicals.cali/" target="_blank">@sacmusicals.cali</a>.</p>
-    <h3>Will my tabla be kept secure while in your care?</h3>
-    <p>Yes, we take security seriously. All instruments are stored safely and worked on in a controlled environment until service is complete.</p>
-  </div> <!-- END OF CREDIBILITY QUESTIONS  -->
+      <h3>How can I place an order?</h3>
+      <p>You can place an order by contacting us through our <a href="contact.html">Contact</a> page. Please provide details about the product or service you are interested in, and we will get back to you with further information.</p>
 
-</div>
+      <h3>What is the turnaround time for orders?</h3>
+      <p>Turnaround time varies depending on the condition of the tabla and current workload. We will provide an estimated timeline before starting.</p>
+    </div>
+
+    <div class="question-section">
+      <h2>Service Questions</h2>
+
+      <h3>How do I know if my tabla needs reheading or repairs?</h3>
+      <p>If your tabla has a dull sound, uneven tone, or visible damage to the skin or structure, it may need reheading or repairs. Feel free to <a href="contact.html">contact us</a> for an assessment.</p>
+
+      <h3>Can you improve the sound of an older tabla?</h3>
+      <p>Yes. Reheading, tuning, and minor repairs can significantly improve tone, resonance, and playability.</p>
+
+      <h3>Do you offer custom tabla sizes or scales?</h3>
+      <p>Yes, we offer custom orders for tablas with specific sizes or scales. Please <a href="contact.html">contact us</a> with your requirements.</p>
+
+      <h3>Do you tune the tablas after reheading?</h3>
+      <p>Yes. Every reheaded tabla is properly tuned and tested before it is returned.</p>
+    </div>
+
+    <div class="question-section">
+      <h2>Shipping Questions</h2>
+
+      <h3>How do I send my tabla for reheading or repairs?</h3>
+      <p>We offer both local drop-off and shipping options. Local drop-offs are available by appointment only, and location details are shared privately after service confirmation. We also accept shipped tablas for reheading and repairs, with shipping instructions provided upon request.</p>
+
+      <h3>Do you ship finished products?</h3>
+      <p>Yes, we ship finished products. Please <a href="contact.html">contact us</a> for shipping details and costs.</p>
+
+      <h3>What are the shipping costs?</h3>
+      <p>Shipping costs vary based on the destination and size of the package. We will provide shipping cost details when you place your order.</p>
+    </div>
+
+    <div class="question-section">
+      <h2>Credibility Questions</h2>
+
+      <h3>Why should I choose SacMusicals?</h3>
+      <p>We are a community-driven, home-based business built from genuine need, passion for tabla, and trust earned through quality work, social media, and <a href="reviews.html">reviews</a>.</p>
+
+      <h3>Do you have any reviews or testimonials?</h3>
+      <p>Yes, you can find reviews and testimonials from our customers on our <a href="reviews.html">Reviews</a> page and our Instagram page at <a href="https://www.instagram.com/sacmusicals.cali/" target="_blank">@sacmusicals.cali</a>.</p>
+
+      <h3>Will my tabla be kept secure while in your care?</h3>
+      <p>Yes, we take security seriously. All instruments are stored safely and worked on in a controlled environment until service is complete.</p>
+    </div>
+  </div>
+
+  <div id="overlay"></div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+      document.querySelector(".hamburger").classList.toggle("active");
+    }
+  </script>
+
+  
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <a href="index.html">
+        <img src="-assets/-images/sac-musicals-logo-shortened.png" alt="SacMusicals logo">
+      </a>
+      <!-- <p>Classical · Contemporary · Culture</p> -->
+    </div>
+
+    <div class="footer-links">
+      <h3>Pages</h3>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="about-us.html">About Us</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>
+        Instagram:
+        <a href="https://www.instagram.com/sacmusicals.cali/" target="_blank">@sacmusicals.cali</a>
+      </p>
+      <p>
+        Email:
+        <a href="mailto:sactablamaker@gmail.com">sactablamaker@gmail.com</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <!-- <p>&copy; 2025 SacMusicals. All rights reserved.</p> -->
+  </div>
+</footer>
 
 </body>
 </html>
