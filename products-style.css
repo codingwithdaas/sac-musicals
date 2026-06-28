@@ -179,7 +179,6 @@ display: flex;
   font-size: 1.2rem;
 }
 
-<<<<<<< HEAD
 .product-item a {
   color: #272726; /* dark gray */
   text-decoration: none;
@@ -189,7 +188,6 @@ display: flex;
   color: #f5cc6b; /* yellow tan */
   text-decoration: underline;
 }
-=======
 @media (max-width: 600px) {
 
   /* MOBILE NAVBAR */
@@ -440,4 +438,3 @@ display: flex;
   font-size: 14px;
   color: #ddd;
 }
->>>>>>> 2b96e98fab983cdd91f8980c2c30206a45271566
