@@ -157,8 +157,34 @@ display: flex;
   border-color: #f5cc6b; /* yellow tan */
 }
 
+.product-item img {
+  width: 100%;
+  max-width: 275px;
+  height: auto;
+  border-radius: 8px;
+  border-color: #333;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.product-item img:hover { /* VIDEO HOVER EFFECT */
+  transform: scale(1.05);
+  transition: transform 0.3s;
+  border-color: #f5cc6b; /* yellow tan */
+}
+
 .product-item p {
   color: #272726; /* dark gray */
   margin-top: 15px;
   font-size: 1.2rem;
+}
+
+.product-item a {
+  color: #272726; /* dark gray */
+  text-decoration: none;
+}
+
+.product-item a:hover {
+  color: #f5cc6b; /* yellow tan */
+  text-decoration: underline;
 }
