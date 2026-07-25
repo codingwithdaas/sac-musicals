@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Terms of Service for SacMusicals.">
+  <meta name="robots" content="noindex">
+
+  <link rel="icon" type="image/png" href="/-assets/-images/favicon.png">
+  <title>Terms of Service - SacMusicals</title>
+
+  <link rel="stylesheet" href="contact-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cookie-consent.css">
+
+  <style>
+    .legal-content {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      line-height: 1.7;
+      color: #2b2b2b;
+    }
+    .legal-content h1 {
+      font-family: "IBM Plex Serif", serif;
+      font-weight: 700;
+    }
+  </style>
+
+  <!-- Google tag (gtag.js) with Consent Mode default -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+
+    (function () {
+      var status = "granted"; // default posture: notice + opt-out
+      try {
+        var stored = JSON.parse(localStorage.getItem("sacmusicals_consent"));
+        if (stored && stored.status === "denied") status = "denied";
+      } catch (e) {}
+      gtag("consent", "default", { analytics_storage: status });
+    })();
+
+    gtag('js', new Date());
+    gtag('config', 'G-CJ712PHJ7J');
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CJ712PHJ7J"></script>
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="-assets/-images/sac-musicals-logo-shortened.png"
+        alt="SacMusicals logo" loading="lazy" aria-hidden="true">
+      </a>
+    </div>
+
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Open navigation menu">
+      ☰
+    </button>
+
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="legal-content">
+    <h1>Terms of Service</h1>
+    <p>
+      This page is a placeholder. SacMusicals has not yet published formal
+      Terms of Service.
+    </p>
+    <p>
+      A real Terms of Service page is a separate project from privacy
+      compliance — it would typically cover things like custom order
+      policies, payment and deposit terms, repair turnaround expectations,
+      and warranty/liability language. If you'd like help drafting one once
+      those business policies are settled, just ask.
+    </p>
+    <p>
+      In the meantime, questions about an order or service can be sent to
+      <a href="mailto:sactablamaker@gmail.com">sactablamaker@gmail.com</a>.
+    </p>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+      document.querySelector(".hamburger").classList.toggle("active");
+    }
+  </script>
+
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <a href="index.html">
+          <img src="-assets/-images/sac-musicals-logo-shortened.png" alt="SacMusicals logo">
+        </a>
+      </div>
+
+      <div class="footer-links">
+        <h3>Pages</h3>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="about-us.html">About Us</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>
+          Instagram:
+          <a href="https://www.instagram.com/sacmusicals.cali/" target="_blank">@sacmusicals.cali</a>
+        </p>
+        <p>
+          Email:
+          <a href="mailto:sactablamaker@gmail.com">sactablamaker@gmail.com</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        <a href="privacy-policy.html">Privacy Policy</a> ·
+        <a href="terms-of-service.html">Terms of Service</a> ·
+        <a href="contact.html">Contact</a> ·
+        <button type="button" class="cookie-preferences-toggle">Cookie Preferences</button>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Cookie Preferences Modal (self-contained — no framework dependency) -->
+  <div class="cc-modal-overlay" id="cookiePreferencesModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="cookiePreferencesLabel">
+    <div class="cc-modal-box">
+      <div class="cc-modal-header">
+        <h2 class="cc-modal-title" id="cookiePreferencesLabel">Cookie Preferences</h2>
+        <button type="button" class="cc-modal-close" data-cc-modal-close aria-label="Close">&times;</button>
+      </div>
+      <div class="cc-modal-body">
+        <div class="cc-category">
+          <div>
+            <div class="cc-category__label">Necessary</div>
+            <p class="cc-category__desc">Required for the Site to function. Always on.</p>
+          </div>
+          <label class="cc-switch">
+            <input type="checkbox" checked disabled aria-label="Necessary cookies (always on)">
+            <span class="cc-switch__track"><span class="cc-switch__thumb"></span></span>
+          </label>
+        </div>
+        <div class="cc-category">
+          <div>
+            <div class="cc-category__label">Analytics</div>
+            <p class="cc-category__desc">Google Analytics — helps us understand how visitors use the Site.</p>
+          </div>
+          <label class="cc-switch">
+            <input type="checkbox" id="cookieAnalyticsToggle" aria-label="Analytics cookies">
+            <span class="cc-switch__track"><span class="cc-switch__thumb"></span></span>
+          </label>
+        </div>
+        <p class="cc-status-note" id="cookieStatusNote"></p>
+      </div>
+      <div class="cc-modal-footer">
+        <button type="button" class="cc-btn cc-btn-primary" id="cookiePreferencesSave">Save Preferences</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="cookie-consent.js"></script>
+</body>
+</html>
