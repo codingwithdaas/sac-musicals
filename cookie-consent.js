@@ -108,9 +108,8 @@
     banner.innerHTML =
       '<div class="cc-banner__inner">' +
       '  <p class="cc-banner__text">' +
-      "    <strong>We use cookies for basic site analytics.</strong> " +
-      "    SacMusicals uses Google Analytics to understand how visitors use this site. " +
-      "    You can decline analytics cookies at any time from Cookie Preferences in the footer." +
+      "    <strong>We use analytics cookies.</strong> " +
+      "    Decline anytime in Cookie Preferences." +
       "  </p>" +
       '  <div class="cc-banner__actions">' +
       '    <a href="privacy-policy.html#cookies" class="cc-btn-link">Learn More</a>' +
