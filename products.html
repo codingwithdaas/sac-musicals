@@ -1,19 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - SacMusicals</title>
-    <link rel="icon" type="image/png" href="/-assets/-images/favicon.png">
-    <link rel="stylesheet" href="products-style.css">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="cookie-consent.css">
-    <!-- Google tag (gtag.js) -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Products | SacMusicals</title>
+<meta name="description" content="Handmade puddas (dayans) in six scales, copper duggas, custom shells, thorhi hammers, gittaks, covers and stands from SacMusicals in Sacramento.">
+<link rel="canonical" href="https://sacmusicals.com/products.html">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Products | SacMusicals">
+<meta property="og:description" content="Handmade puddas (dayans) in six scales, copper duggas, custom shells, thorhi hammers, gittaks, covers and stands from SacMusicals in Sacramento.">
+<meta property="og:image" content="https://sacmusicals.com/assets/logo/logo-512.png">
+<link rel="icon" href="assets/logo/favicon.ico" sizes="any">
+<link rel="icon" href="assets/logo/logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/bodoni-moda-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-
   (function () {
     var status = "granted";
     try {
@@ -22,203 +27,130 @@
     } catch (e) {}
     gtag("consent", "default", { analytics_storage: status });
   })();
-
   gtag('js', new Date());
   gtag('config', 'G-CJ712PHJ7J');
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CJ712PHJ7J"></script>
 </head>
 <body>
-    
-    <header class="navbar">
-    <div class="logo">
-    <a href="index.html">
-        <img src="-assets/-images/sac-musicals-logo-shortened.png" 
-        alt="SacMusicals logo" loading="lazy" aria-hidden="true">
-    </a>
-    </div>
-
-  <button class="hamburger" onclick="toggleMenu()" aria-label="Open navigation menu">
-    ☰
-  </button>
-
-  <script>
-  function toggleMenu() {
-    document.getElementById("navLinks").classList.toggle("show");
-    document.querySelector(".hamburger").classList.toggle("active");
-  }
-  </script>
-
-    <nav>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="reviews.html">Reviews</a></li>
-        <li><a href="about-us.html">About Us</a></li>
-        <li><a href="faqs.html">FAQs</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header solid" id="header">
+  <a class="brand" href="index.html" aria-label="SacMusicals home"><img src="assets/logo/logo.svg" alt="" width="40" height="40"><span>SacMusicals</span></a>
+  <ul class="nav">
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#scales">Scales</a></li>
+    <li><a href="index.html#story">Our story</a></li>
+    <li><a href="products.html" aria-current="page">Products</a></li>
+    <li><a href="faqs.html">FAQs</a></li>
+  </ul>
+  <a class="btn btn-gold header-cta" href="index.html#contact">Contact us</a>
+  <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mobileMenu"><i></i><i></i><span class="sr-only">Menu</span></button>
 </header>
-    
-<div class="hero-image">
-    <div class="hero-text">
-      <h1>Products</h1>
-      <p>Explore our range and varieties of tabla products.</p>
+<nav class="mobile-menu" id="mobileMenu" hidden aria-label="Site">
+  <a href="index.html#services">Services</a><a href="index.html#scales">Scales</a><a href="index.html#story">Our story</a><a href="products.html">Products</a><a href="faqs.html">FAQs</a><a href="index.html#contact">Contact us</a>
+</nav>
+<main id="main">
+  <section class="page-hero" aria-labelledby="page-h">
+    <div class="wrap page-hero-grid">
+      <div class="reveal">
+        <p class="eyebrow">Products</p>
+        <h1 id="page-h">Made by hand, <em>made to be played.</em></h1>
+        <p class="lede">Explore our range and varieties of tabla products. If you're interested in any of these, or would like to order a <a href="index.html#contact">custom set</a>, please <a href="index.html#contact">contact us</a>.</p>
+      </div>
+      <div class="page-hero-img zoom reveal"><img src="assets/img/copper-dugga.webp" alt="A hand-hammered copper dugga" width="900" height="1049"></div>
     </div>
-  </div>
+  </section>
 
-<div class="content-section">
-    <h2>Showcase</h2>
-    <p>Here are some photos and videos of our products. If you're interested in any of these products, or would like order a <i>custom set</i>, please <a href="contact.html">contact us!</a></p>
-    <h3 style="color: red; text-align: center; margin-bottom: 0.5rem;">Special Products Coming Soon...</h3>
-    <h3 style="color: red; text-align: center; margin-top: 0.5rem;" >Stay <a href="https://www.instagram.com/sacmusicals.cali/" target="_blank">updated</a> for more exciting releases!</h3>
+  <section class="section" aria-labelledby="dayans-h">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Puddas / Dayans</p>
+        <h2 id="dayans-h">Six dayans, <em>six voices.</em></h2>
+        <p class="lede">Tap a video to hear each one. Sound on.</p>
+      </div>
+      <div class="video-grid">
+        <figure class="vcard reveal"><button class="vplay" type="button" data-video="e-scale-5-5in-red-sheesham" aria-label="Play E scale 5.5 inch dayan, red sheesham"><img src="assets/video/e-scale-5-5in-red-sheesham.jpg" alt="" loading="lazy"><span class="vicon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></button><figcaption><b>E</b> Scale 5.5″ Pudda/Dayan<small>Red sheesham</small></figcaption></figure>
+        <figure class="vcard reveal"><button class="vplay" type="button" data-video="c-sharp-5-5in-red-sheesham" aria-label="Play C sharp scale 5.5 inch dayan, red sheesham"><img src="assets/video/c-sharp-5-5in-red-sheesham.jpg" alt="" loading="lazy"><span class="vicon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></button><figcaption><b>C♯</b> Scale 5.5″ Pudda/Dayan<small>Red sheesham</small></figcaption></figure>
+        <figure class="vcard reveal"><button class="vplay" type="button" data-video="d-scale-5-5in-mango-wood" aria-label="Play D scale 5.5 inch dayan, mango wood"><img src="assets/video/d-scale-5-5in-mango-wood.jpg" alt="" loading="lazy"><span class="vicon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></button><figcaption><b>D</b> Scale 5.5″ Pudda/Dayan<small>Mango wood</small></figcaption></figure>
+        <figure class="vcard reveal"><button class="vplay" type="button" data-video="a-sharp" aria-label="Play A sharp scale dayan"><img src="assets/video/a-sharp.jpg" alt="" loading="lazy"><span class="vicon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></button><figcaption><b>A♯</b> Scale Pudda/Dayan</figcaption></figure>
+        <figure class="vcard wide reveal"><button class="vplay" type="button" data-video="b-scale-6in" aria-label="Play B scale 6 inch dayan"><img src="assets/video/b-scale-6in.jpg" alt="" loading="lazy"><span class="vicon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></button><figcaption><b>B</b> Scale 6″ Pudda/Dayan</figcaption></figure>
+        <figure class="vcard wide reveal"><button class="vplay" type="button" data-video="d-scale-5-5in" aria-label="Play D scale 5.5 inch dayan"><img src="assets/video/d-scale-5-5in.jpg" alt="" loading="lazy"><span class="vicon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></button><figcaption><b>D</b> Scale 5.5″ Pudda/Dayan</figcaption></figure>
+      </div>
     </div>
+  </section>
 
-    <div class="product-showcase">
-      
-      <div class="product-item">
-        <a href="contact.html">
-          <img src="-assets/-images/products-photos/thorhi-gray-background.PNG"
-        loading="lazy" >
-      <p>Thorhi/Hammers</p>
-      </a>
+  <section class="section tint" aria-labelledby="dugga-h">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Duggas / Bayans &amp; shells</p>
+        <h2 id="dugga-h">Copper, <em>shaped by hand.</em></h2>
+        <p class="lede">Copper duggas and custom shells, each with its own pattern.</p>
       </div>
-
-      <div class="product-item">
-        <a href="contact.html">
-          <img src="-assets/-images/products-photos/gittaks-gray-background.PNG"
-          loading="lazy">
-        <p>Gittaks</p>
-        </a>
+      <div class="product-grid">
+        <figure class="pcard reveal"><div class="pimg zoom"><img src="assets/img/shell-scale-sm.webp" srcset="assets/img/shell-scale-sm.webp 467w, assets/img/shell-scale.webp 933w" sizes="(max-width: 760px) 92vw, 30vw" alt="Copper dugga shell with a scale pattern" loading="lazy" width="467" height="700"></div><figcaption>Copper Dugga/Bayan</figcaption></figure>
+        <figure class="pcard reveal"><div class="pimg zoom"><img src="assets/img/shell-waves-sm.webp" srcset="assets/img/shell-waves-sm.webp 467w, assets/img/shell-waves.webp 933w" sizes="(max-width: 760px) 92vw, 30vw" alt="Dugga shell with a waves pattern" loading="lazy" width="467" height="700"></div><figcaption>Custom Shells · Waves</figcaption></figure>
+        <figure class="pcard reveal"><div class="pimg zoom"><img src="assets/img/shell-flower-sm.webp" srcset="assets/img/shell-flower-sm.webp 467w, assets/img/shell-flower.webp 933w" sizes="(max-width: 760px) 92vw, 30vw" alt="Copper dugga shell with a flower pattern" loading="lazy" width="467" height="700"></div><figcaption>Custom Shells · Flower</figcaption></figure>
+        <figure class="pcard reveal"><div class="pimg zoom"><img src="assets/img/shell-plants-sm.webp" srcset="assets/img/shell-plants-sm.webp 467w, assets/img/shell-plants.webp 933w" sizes="(max-width: 760px) 92vw, 30vw" alt="Copper dugga shell with a plants pattern" loading="lazy" width="467" height="700"></div><figcaption>Custom Shells · Plants</figcaption></figure>
       </div>
-
-      <div class="product-item">
-        <a href="contact.html">
-          <img src="-assets/-images/products-photos/cover-bina-gray-background.PNG"
-          loading="lazy">
-          <p>Covers & Biney/Stands</p>
-        </a>
-      </div>
-
-      <div class="product-item">
-        <a href="contact.html">
-          <img src="-assets/-images/products-photos/waves-dugga-shell.png"
-          loading="lazy">
-          <p>Custom Shells</p>
-        </a>
-      </div>
-
-      <div class="product-item">
-        <a href="contact.html">
-          <img src="-assets/-images/products-photos/scale-copper-dugga-shell.png"
-          loading="lazy">
-          <p>Copper Dugga/Bayan</p>
-        </a>
-      </div>
-      
-      <div class="product-item">
-        <video src="-assets/-videos/E-scale-5.5-inch-Dayan-Red-Sheesham.mp4" 
-        controls 
-        alt="5.5 inch scale E tabla set video" 
-        loading="lazy">
-      </video>
-      <p>E Scale 5.5" Pudda/Dayan</p>
-      </div>
-
-      <div class="product-item">
-        <video src="-assets/-videos/C-sharp-5.5-inch-Red-Sheesham-Dayan.mp4" 
-        controls 
-        alt="5.5 inch scale C# tabla set video" 
-        loading="lazy">
-      </video>
-      <p>C# Scale 5.5" Pudda/Dayan</p>
-      </div>
-
-      <div class="product-item">
-        <video src="-assets/-videos/D-scale-5.5-inch-Mango-Wood-Dayan.mp4" 
-        controls 
-        alt="5.5 inch scale D tabla set video" 
-        loading="lazy">
-      </video>
-      <p>D Scale 5.5" Pudda/Dayan</p>
-      </div>
-
-      <div class="product-item">
-        <video src="-assets/-videos/A-sharp-Dayan.mp4" 
-        controls 
-        alt="5.5 inch scale A# tabla set video" 
-        loading="lazy">
-      </video>
-      <p>A# Scale Pudda/Dayan</p>
-      </div>
-
-      <div class="product-item"> 
-        <video src="-assets/-videos/6-inch-scale-B.mp4"
-         controls 
-         alt="6 inch scale B tabla set video" 
-         loading="lazy">
-         </video>
-        <p>B Scale 6" Pudda/Dayan</p>
-      </div>
-
-      <div class="product-item">
-        <video src="-assets/-videos/5.5-inch-scale-D.mp4" 
-        controls 
-        alt="5.5 inch scale D tabla set video" 
-        loading="lazy">
-      </video>
-      <p>D Scale 5.5" Pudda/Dayan</p>
-      </div>
-
     </div>
+  </section>
 
+  <section class="section" aria-labelledby="acc-h">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Accessories</p>
+        <h2 id="acc-h">Everything around <em>the pair.</em></h2>
+      </div>
+      <div class="product-grid three">
+        <figure class="pcard reveal"><div class="pimg zoom"><img src="assets/img/thorhi-hammers-sm.webp" alt="Tabla tuning hammers" loading="lazy" width="466" height="700"></div><figcaption>Thorhi/Hammers</figcaption></figure>
+        <figure class="pcard reveal"><div class="pimg zoom"><img src="assets/img/gittaks-sm.webp" alt="Wooden gittaks" loading="lazy" width="466" height="700"></div><figcaption>Gittaks</figcaption></figure>
+        <figure class="pcard reveal"><div class="pimg zoom"><img src="assets/img/covers-biney-sm.webp" alt="Tabla covers and biney stands" loading="lazy" width="467" height="700"></div><figcaption>Covers &amp; Biney/Stands</figcaption></figure>
+      </div>
+    </div>
+  </section>
 
-    
+  <section class="cta-band" aria-labelledby="soon-h">
+    <div class="wrap cta-inner reveal">
+      <div>
+        <p class="eyebrow">Special products coming soon</p>
+        <h2 id="soon-h">Stay <em>updated</em> for more releases.</h2>
+      </div>
+      <div class="hero-ctas">
+        <a class="btn btn-gold" href="https://www.instagram.com/sacmusicals.cali/" target="_blank" rel="noopener">Follow @sacmusicals.cali</a>
+        <a class="btn btn-ghost" href="index.html#contact">Order a custom set</a>
+      </div>
+    </div>
+  </section>
+
+  <dialog class="vmodal" id="vmodal" aria-label="Dayan video">
+    <video id="vmodalVideo" playsinline controls preload="none"></video>
+    <p id="vmodalCaption"></p>
+    <button class="vmodal-close" type="button" aria-label="Close video">✕</button>
+  </dialog>
+</main>
 <footer class="site-footer">
-  <div class="footer-content">
+  <div class="wrap footer-top">
     <div class="footer-brand">
-      <a href="index.html">
-        <img src="-assets/-images/sac-musicals-logo-shortened.png" alt="SacMusicals logo">
-      </a>
-      <!-- <p>Classical · Contemporary · Culture</p> -->
+      <img src="assets/logo/logo.svg" alt="SacMusicals logo" width="72" height="72" loading="lazy">
+      <p class="footer-name">SacMusicals</p>
+      <p class="footer-tag">Classical · Contemporary · Culture</p>
     </div>
-
-    <div class="footer-links">
-      <h3>Pages</h3>
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="reviews.html">Reviews</a>
-      <a href="about-us.html">About Us</a>
-      <a href="faqs.html">FAQs</a>
-      <a href="contact.html">Contact</a>
-    </div>
-
-    <div class="footer-contact">
-      <h3>Contact</h3>
-      <p>
-        Instagram:
-        <a href="https://www.instagram.com/sacmusicals.cali/" target="_blank">@sacmusicals.cali</a>
-      </p>
-      <p>
-        Email:
-        <a href="mailto:sactablamaker@gmail.com">sactablamaker@gmail.com</a>
-      </p>
+    <nav class="footer-col" aria-label="Pages">
+      <h2>Pages</h2>
+      <a href="index.html">Home</a><a href="index.html#services">Services</a><a href="products.html">Products</a><a href="index.html#story">Our story</a><a href="faqs.html">FAQs</a><a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="footer-col">
+      <h2>Contact</h2>
+      <a href="https://www.instagram.com/sacmusicals.cali/" target="_blank" rel="noopener">Instagram · @sacmusicals.cali</a>
+      <a href="mailto:sactablamaker@gmail.com">sactablamaker@gmail.com</a>
+      <p>Sacramento, California</p>
     </div>
   </div>
-
-  <div class="footer-bottom">
-  <!-- <p>&copy; 2025 SacMusicals. All rights reserved.</p> -->
-  <p>
-    <a href="privacy-policy.html">Privacy Policy</a> ·
-    <a href="terms-of-service.html">Terms of Service</a> ·
-    <a href="contact.html">Contact</a> ·
-    <button type="button" class="cookie-preferences-toggle">Cookie Preferences</button>
-  </p>
-</div>
+  <div class="wrap footer-bottom">
+    <p>© 2026 SacMusicals. All rights reserved.</p>
+    <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="terms-of-service.html">Terms of Service</a> · <button type="button" class="cookie-preferences-toggle">Cookie Preferences</button></p>
+  </div>
 </footer>
-
-<!-- Cookie Preferences Modal (self-contained — no framework dependency) -->
 <div class="cc-modal-overlay" id="cookiePreferencesModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="cookiePreferencesLabel">
   <div class="cc-modal-box">
     <div class="cc-modal-header">
@@ -239,7 +171,7 @@
       <div class="cc-category">
         <div>
           <div class="cc-category__label">Analytics</div>
-          <p class="cc-category__desc">Google Analytics — helps us understand how visitors use the Site.</p>
+          <p class="cc-category__desc">Google Analytics, to help us understand how visitors use the Site.</p>
         </div>
         <label class="cc-switch">
           <input type="checkbox" id="cookieAnalyticsToggle" aria-label="Analytics cookies">
@@ -253,9 +185,10 @@
     </div>
   </div>
 </div>
-
-<!-- Cookie consent banner + Consent Mode update logic -->
-<script src="cookie-consent.js"></script>
-
+<script src="assets/cookie-consent.js"></script>
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/lenis.min.js"></script>
+<script src="assets/site.js"></script>
 </body>
 </html>

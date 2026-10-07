@@ -1,48 +1,46 @@
-# SacMusicals Website
+# SacMusicals
 
-## Description
-This project is a custom-built website for **SacMusicals**, a local business that creates and repairs traditional Indian tablas. The website is designed to provide information about the business, showcase products and services, and make it easier for customers to get in touch.
+The website for [SacMusicals](https://sacmusicals.com), a home-based tabla making, reheading and repair service in Sacramento, California.
 
-In addition to web development, this project also involved managing social media content and supporting community outreach.
+Plain HTML, CSS and JavaScript. There is no build step for the site itself: upload the files and it runs.
 
-## Features
-- Business and service information
-- Contact page for customer inquiries
-- Bootstrap-based contact form with responsive components
-- Mobile-responsive website layout with hamburger navigation
-- Clean and simple UI focused on usability
-- Responsive footer and mobile-friendly page sections
+## Pages
 
-## Tech Stack
-- HTML
-- CSS
-- JavaScript
-- Bootstrap
-- Google Fonts (IBM Plex Serif, IBM Plex Sans)
+| File | What it is |
+| --- | --- |
+| `index.html` | Home. The 3D tabla hero and scroll dive, then Services, Hear our dayans, Our story and Contact |
+| `products.html` | Dayan videos, copper duggas and shells, accessories |
+| `faqs.html` | FAQs, with tap-to-define terms (reheading, pudda, dugga) |
+| `privacy-policy.html`, `terms-of-service.html` | Legal pages |
+| `success.html` | Where the contact form lands after sending |
+| `about-us.html`, `contact.html`, `reviews.html` | Redirects, so old links keep working |
 
-## Development Process
-This project was initially developed before I fully understood version control. After learning Git and GitHub, the project was uploaded and is now maintained with incremental commits and improvements.
+## What's inside `assets/`
 
-This reflects my learning process and growth as a developer.
+- `site.css` holds all styles. Colours and fonts are the variables at the top.
+- `site.js` handles smooth scrolling, the menu, the tabla dive, the video players, the FAQ pop-ups and the form.
+- `tabla.js` is the 3D tabla, built with three.js. Its source is in `build/src/tabla.js` in the working copy.
+- `audio.js` makes the tabla sounds when a drum head is tapped.
+- `cookie-consent.js` is the cookie banner and Google Analytics consent. It is unchanged from the old site.
+- `vendor/` holds GSAP, ScrollTrigger and Lenis, stored locally.
+- `fonts/` holds Bodoni Moda and Hanken Grotesk, self-hosted.
+- `img/`, `video/` and `logo/` hold the photos, compressed dayan videos and the SM logo.
 
-## What I Learned
-- Building a real-world website for a local business
-- Writing clean and maintainable HTML/CSS
-- Responsive design principles
-- Using Git and GitHub for version control
-- Communicating with a client and adapting to real requirements
+The old `-assets` folder and the old `*-style.css` files are no longer used. They can be deleted once you're happy.
 
-## Future Improvements
-- Continue testing responsiveness across more screen sizes and devices
-- Improve accessibility (ARIA labels, contrast, keyboard navigation)
-- Optimize performance and load times
-- Expand content and visuals
+## Common edits
 
-## Status
-Website is live! Visit it at [www.sacmusicals.com](https://www.sacmusicals.com).
+- **Text:** edit the HTML directly.
+- **Add a dayan video:**
+  1. Put an `.mp4` and a `.jpg` poster with the same name in `assets/video/`.
+  2. Copy one of the `<figure class="vcard">` blocks in `products.html` and change its `data-video`.
+- **Contact form:** it posts to Web3Forms with the same access key as before, and lands on `success.html`.
+- **Reviews:** the section is held back until real reviews are sent in.
 
-More changes and fixes to come!
+## Preview locally
 
-## Author
-Keerat Singh  
-High school student | Computer Engineering, Computer Science, and Bioinformatics
+```
+python3 -m http.server 8000
+```
+
+Then open http://localhost:8000. The 3D tabla loads as a module, so open the site through a server rather than double-clicking the file.
